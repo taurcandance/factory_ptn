@@ -1,17 +1,8 @@
 <?php
+require_once '../vendor/autoload.php';
 
-use CreatorShipTransport\CreatorShipTransport;
-use CreatorTruckTransport\CreatorTruckTransport;
+use ShopManager\ShopManager;
 
-$shipsFactory = new CreatorShipTransport();
-$bloodMarry = $shipsFactory->CreateTransport();
-$bloodMarry->download();
-$bloodMarry->deliver();
-$bloodMarry->unload();
-
-
-$truckFactory = new CreatorTruckTransport();
-$volvo = $truckFactory->CreateTransport();
-$volvo->download();
-$volvo->deliver();
-$volvo->unload();
+$productManager = new ShopManager();
+$cd = $productManager->getCD();
+var_dump($cd);
