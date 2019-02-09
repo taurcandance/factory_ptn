@@ -1,9 +1,5 @@
 <?php
-
-namespace Book;
-
-
-use Product\Product;
+require_once 'Product.php';
 
 class Book extends Product
 {

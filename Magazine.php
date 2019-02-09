@@ -1,9 +1,5 @@
 <?php
-
-namespace Magazine;
-
-
-use Product\Product;
+require_once 'Product.php';
 
 class Magazine extends Product
 {

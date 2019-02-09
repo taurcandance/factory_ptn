@@ -1,9 +1,5 @@
 <?php
-
-namespace Product;
-
-
-use IDiscount\IDiscount;
+require_once 'IDiscount.php';
 
 abstract class Product implements IDiscount
 {
@@ -11,6 +7,11 @@ abstract class Product implements IDiscount
     protected $price;
     protected $name;
     protected $receiptDate;
+
+    public static function init($product)
+    {
+        return new $product();
+    }
 
     /**
      * Get Type.

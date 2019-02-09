@@ -1,9 +1,5 @@
 <?php
-
-namespace CD;
-
-
-use Product\Product;
+require_once 'Product.php';
 
 class CD extends Product
 {
