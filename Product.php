@@ -8,9 +8,10 @@ abstract class Product implements IDiscount
     protected $name;
     protected $receiptDate;
 
-    public static function init($product)
+
+    public static function init(string $productTypeName)
     {
-        return new $product();
+        return new $productTypeName();
     }
 
     /**

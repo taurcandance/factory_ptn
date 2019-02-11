@@ -1,4 +1,5 @@
 <?php
+
 require_once 'Product.php';
 
 class Magazine extends Product
